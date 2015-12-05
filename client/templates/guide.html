@@ -1,0 +1,16 @@
+<ion-view view-title="Guide">
+  <ion-content>
+ 		<ion-list>
+      <ion-item
+              ng-repeat="speaker in speakers | orderBy:'-lastMessage.timestamp'"
+              class="item-speaker item-remove-animate item-avatar item-icon-right"
+              type="item-text-wrap">
+        <img ng-src="{{speaker.picture}}">
+        <h2>{{speaker.name}}</h2>
+        <p>{{speaker.text}}</p>
+        <span class="speaker-timestamp">{{speaker.timestamp | calendar}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
