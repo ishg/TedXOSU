@@ -17,6 +17,15 @@ function config($stateProvider, $urlRouterProvider) {
           controller: 'GuideCtrl'
         }
       }
+    })
+    .state('tab.speaker-detail', {
+      url: '/guide/:speakerId',
+      views: {
+        'tab-guide': {
+          templateUrl: 'client/templates/speaker-detail.html',
+          controller: 'SpeakerDetailCtrl'
+        }
+      }
     });
  
   $urlRouterProvider.otherwise('tab/guide');
