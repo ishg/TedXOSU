@@ -1,11 +1,11 @@
-<ion-view view-title="Guide">
+<ion-view view-title="Speakers">
   <ion-content>
  		<ion-list>
       <ion-item
               ng-repeat="speaker in speakers | orderBy:'-lastMessage.timestamp'"
               class="item-speaker item-remove-animate item-avatar item-icon-right"
               type="item-text-wrap"
-              href="#/tab/guide/{{speaker._id}}">
+              href="#/tab/speakers/{{speaker._id}}">
         <img ng-src="{{speaker.picture}}">
         <h2>{{speaker.name}}</h2>
         <p>{{speaker.text}}</p>

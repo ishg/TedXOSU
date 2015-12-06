@@ -9,24 +9,24 @@ function config($stateProvider, $urlRouterProvider) {
       abstract: true,
       templateUrl: 'client/templates/tabs.html'
     })
-    .state('tab.guide', {
-      url: '/guide',
+    .state('tab.speakers', {
+      url: '/speakers',
       views: {
-        'tab-guide': {
-          templateUrl: 'client/templates/guide.html',
-          controller: 'GuideCtrl'
+        'tab-speakers': {
+          templateUrl: 'client/templates/speakers.html',
+          controller: 'SpeakersCtrl'
         }
       }
     })
     .state('tab.speaker-detail', {
-      url: '/guide/:speakerId',
+      url: '/speakers/:speakerId',
       views: {
-        'tab-guide': {
+        'tab-speakers': {
           templateUrl: 'client/templates/speaker-detail.html',
           controller: 'SpeakerDetailCtrl'
         }
       }
     });
  
-  $urlRouterProvider.otherwise('tab/guide');
+  $urlRouterProvider.otherwise('tab/speakers');
 }

@@ -1,7 +1,7 @@
 angular
 	.module('TedXOSU')
-	.controller('GuideCtrl', GuideCtrl);
+	.controller('SpeakersCtrl', SpeakersCtrl);
 
-function GuideCtrl($scope){
+function SpeakersCtrl($scope){
 	$scope.speakers = $scope.$meteorCollection(Speakers, false);
 }

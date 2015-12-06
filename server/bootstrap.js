@@ -1,34 +1,40 @@
 Meteor.startup(function(){
+	Speakers.remove({});
 	if (Speakers.find().count() == 0){
 		var speakers = [
 	    {
 	      name: 'Ethan Gonzalez',
-	      picture: 'https://randomuser.me/api/portraits/thumb/men/1.jpg',
-	      text: 'You on your way?',
+	      picture: 'face-1.jpg',
+	      title: 'You on your way?',
+	      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet magna id ultricies feugiat. Integer sollicitudin a elit a placerat. In augue magna, blandit quis luctus eu, lobortis sit amet ligula. Nullam facilisis sed metus eget tincidunt. Maecenas egestas sodales finibus. Nunc mattis auctor pharetra. Suspendisse tristique erat tellus, sagittis scelerisque sem varius ac.',
 	      timestamp: moment().subtract(1, 'hours').toDate()
 	    },
 	    {
 	      name: 'Bryan Wallace',
-	      picture: 'https://randomuser.me/api/portraits/thumb/lego/1.jpg',
-	      text: 'Hey, it\'s me',
+	      picture: 'face-1.jpg',
+	      title: 'Hey, it\'s me',
+	      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet magna id ultricies feugiat. Integer sollicitudin a elit a placerat. In augue magna, blandit quis luctus eu, lobortis sit amet ligula. Nullam facilisis sed metus eget tincidunt. Maecenas egestas sodales finibus. Nunc mattis auctor pharetra. Suspendisse tristique erat tellus, sagittis scelerisque sem varius ac.',
 	      timestamp: moment().subtract(2, 'hours').toDate()
 	    },
 	    {
 	      name: 'Avery Stewart',
-	      picture: 'https://randomuser.me/api/portraits/thumb/women/1.jpg',
-	      text: 'I should buy a boat',
+	      picture: 'face-1.jpg',
+	      title: 'I should buy a boat',
+	      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet magna id ultricies feugiat. Integer sollicitudin a elit a placerat. In augue magna, blandit quis luctus eu, lobortis sit amet ligula. Nullam facilisis sed metus eget tincidunt. Maecenas egestas sodales finibus. Nunc mattis auctor pharetra. Suspendisse tristique erat tellus, sagittis scelerisque sem varius ac.',
 	      timestamp: moment().subtract(1, 'days').toDate()
 	    },
 	    {
 	      name: 'Katie Peterson',
-	      picture: 'https://randomuser.me/api/portraits/thumb/women/2.jpg',
-	      text: 'Look at my mukluks!',
+	      picture: 'face-1.jpg',
+	      title: 'Look at my mukluks!',
+	      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet magna id ultricies feugiat. Integer sollicitudin a elit a placerat. In augue magna, blandit quis luctus eu, lobortis sit amet ligula. Nullam facilisis sed metus eget tincidunt. Maecenas egestas sodales finibus. Nunc mattis auctor pharetra. Suspendisse tristique erat tellus, sagittis scelerisque sem varius ac.',
 	      timestamp: moment().subtract(4, 'days').toDate()
 	    },
 	    {
 	      name: 'Ray Edwards',
-	      picture: 'https://randomuser.me/api/portraits/thumb/men/2.jpg',
-	      text: 'This is wicked good ice cream.',
+	      picture: 'face-1.jpg',
+	      title: 'This is wicked good ice cream.',
+	      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet magna id ultricies feugiat. Integer sollicitudin a elit a placerat. In augue magna, blandit quis luctus eu, lobortis sit amet ligula. Nullam facilisis sed metus eget tincidunt. Maecenas egestas sodales finibus. Nunc mattis auctor pharetra. Suspendisse tristique erat tellus, sagittis scelerisque sem varius ac.',
 	      timestamp: moment().subtract(2, 'weeks').toDate()
 	    }
 	  ];

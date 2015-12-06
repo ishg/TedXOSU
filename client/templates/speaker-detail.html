@@ -1,10 +1,36 @@
 <ion-view title="{{speaker.name}}">
-  <ion-nav-buttons side="right">
-    <button class="button button-clear"><img class="header-picture" ng-src="{{speaker.picture}}"></button>
-  </ion-nav-buttons>
   <ion-content class="speaker">
-  	<div class="speaker-info">
-  		
+  	<div class="list card">
+  		<div class="item speaker-picture">
+  	    <img src="{{speaker.picture}}">
+  	  </div>
+
+  	  <div class="item speaker-header">
+  	    <h2>{{speaker.title}}</h2>
+  	    <p>{{speaker.timestamp | calendar}}</p>
+  	  </div>
+
+  	  <div class="item item-body">
+  	    <p>{{speaker.text}}</p>
+	 	  </div>
+
+	 	  <div class="item tabs tabs-secondary tabs-icon-left">
+	 	      
+	 	      <a class="tab-item" href="#" ng-show="{{speaker.website}}">
+	 	        <i class="icon ion-earth"></i>
+	 	        Website
+	 	      </a>
+
+	 	      <a class="tab-item" href="#">
+	 	        <i class="icon ion-document-text"></i>
+	 	        Notes
+	 	      </a>
+	 	      <a class="tab-item" href="#">
+	 	        <i class="icon ion-share"></i>
+	 	        Share
+	 	      </a>
+	 	    </div>
+
   	</div>
   </ion-content>
 </ion-view>

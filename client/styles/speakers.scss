@@ -1,0 +1,36 @@
+.item-speaker{
+	.speaker-timestamp{
+		position: absolute;
+		top: 16px;
+		right: 38px;
+		font-size: 14px;
+		color: #9A9898;
+	}
+}
+
+
+
+.speaker{
+	.speaker-picture{
+		padding:0px;
+		img{
+			width: 100%;
+		}
+	}
+	.speaker-header{
+		border-top: 0px;
+		text-align:center;
+	}
+	.speaker-contact{
+		color: #e62b1e;
+		a{
+			text-decoration: none;
+		}
+		a:visited{
+			color: #e62b1e;
+		}
+	}
+
+
+
+}
