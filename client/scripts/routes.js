@@ -35,6 +35,15 @@ function config($stateProvider, $urlRouterProvider) {
           controller: 'ScheduleCtrl'
         }
       }
+    })
+    .state('tab.event', {
+      url: '/event',
+      views: {
+        'tab-event': {
+          templateUrl: 'client/templates/event.html',
+          controller: 'EventCtrl'
+        }
+      }
     });
  
   $urlRouterProvider.otherwise('tab/speakers');
