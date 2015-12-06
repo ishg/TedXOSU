@@ -1,0 +1,18 @@
+<ion-view view-title="Speakers">
+  <ion-content>
+    <div class="speaker-list">
+   		<div class="row" ng-repeat="rows in speakers">
+        <div 
+          class="col" 
+          ng-repeat="speaker in rows">
+          <a href="#/tab/speakers/{{speaker._id}}">
+            <div class="card">
+              <img ng-src="{{speaker.picture}}">
+              <p>{{speaker.name}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
