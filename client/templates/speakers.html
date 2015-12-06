@@ -1,17 +1,18 @@
 <ion-view view-title="Speakers">
   <ion-content>
- 		<ion-list>
-      <ion-item
-              ng-repeat="speaker in speakers | orderBy:'-lastMessage.timestamp'"
-              class="item-speaker item-remove-animate item-avatar item-icon-right"
-              type="item-text-wrap"
-              href="#/tab/speakers/{{speaker._id}}">
-        <img ng-src="{{speaker.picture}}">
-        <h2>{{speaker.name}}</h2>
-        <p>{{speaker.text}}</p>
-        <span class="speaker-timestamp">{{speaker.timestamp | calendar}}</span>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </ion-item>
-    </ion-list>
+    <div class="speaker-list">
+   		<div class="row" ng-repeat="rows in speakers">
+        <div 
+          class="col" 
+          ng-repeat="speaker in rows">
+          <a href="#/tab/speakers/{{speaker._id}}">
+            <div class="card">
+              <img ng-src="{{speaker.picture}}">
+              <p>{{speaker.name}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
