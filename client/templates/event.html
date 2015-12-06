@@ -1,8 +1,80 @@
 <ion-view view-title="Event">
-  <ion-content>
-    <div id="googlemaps"></div>
-    <div id="container">
+  <ion-content class="red-polygon">
+  	
+  	<div class="card">
+  		<div class="row">
+  			<div class="col sponsors">
+  				<div class="row">
+	    			<i class="icon ion-android-contacts assertive"></i>
+	    		</div>
+	    		<div class="row">
+	    			<p>Sponsors</p>
+	    		</div>
+  			</div>
+  			<div class="col col-67">
+	  			<ion-slide-box 
+	  				auto-play="true" 
+	  				does-continue="true"  
+	  				show-pager="false"
+	  				slide-interval="3000">
+	  			  <ion-slide>
+	  			    <div class="box blue"><h1>Sponsor-1</h1></div>
+	  			  </ion-slide>
+	  			  <ion-slide>
+	  			    <div class="box yellow"><h1>Sponsor-2</h1></div>
+	  			  </ion-slide>
+	  			  <ion-slide>
+	  			    <div class="box pink"><h1>Sponsor-3</h1></div>
+	  			  </ion-slide>
+	  			</ion-slide-box>
+	  		</div>
+  		</div>
+  	</div>
 
-    </div>
+  	<div class="list card">
+  	  <div class="item item-icon-left">
+  	    <i class="icon ion-location assertive"></i>
+  	    <h2>Wexner Center for the Arts</h2>
+  	    <p>1871 N High St, Columbus, OH</p>
+  	  </div>
+
+  	  <div class="item item-body">
+  	    <div class="row map-button-group">
+  	    	<div class="col">
+  	    		<div class="row">
+  	    			<i class="icon ion-model-s assertive"></i>
+  	    		</div>
+  	    		<div class="row">
+  	    			<p>Getting Here</p>
+  	    		</div>
+  	    	</div>
+  	    	<div class="col middle">
+  	    		<a href="http://tedx.osu.edu">
+			    		<div class="row">
+			    			<i class="icon ion-earth assertive"></i>
+			    		</div>
+			    		<div class="row">
+			    			<p>Visit Website</p>
+			    		</div>
+  	    		</a>
+  	    	</div>
+  	    	<div class="col">
+  	    		<div class="row">
+  	    			<i class="icon ion-map assertive"></i>
+  	    		</div>
+  	    		<div class="row">
+  	    			<p>Event Map</p>
+  	    		</div>
+  	    	</div>
+  	    </div>
+
+  	    <p>
+  	      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+  	      the content is from a card-body consisting of an image and paragraph text. The footer
+  	      consists of tabs, icons aligned left, within the card-footer.
+  	    </p>
+  	  </div>
+
+  	</div>
   </ion-content>
 </ion-view>

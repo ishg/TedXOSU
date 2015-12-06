@@ -18,3 +18,45 @@
   opacity: .45; /* Set the opacity for a slightly transparent Google Form */ 
   color: white;
 }
+
+.item-body{
+  padding-top: 0px;
+}
+
+.map-button-group{
+  border-bottom: 1px solid #ddd;
+  .row{
+    text-align: center;
+    i{
+      margin: 0 auto;
+    }
+    p{
+      margin: 0 auto;
+      font-size: 12px;
+      color: #e62b1e;
+    }
+  }
+  .middle{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+.sponsors{
+  border-right: 1px solid #ddd;
+  .row{
+    text-align: center;
+    i{
+      margin: 0 auto;
+      font-size: 32px;
+    }
+    p{
+      margin: 0 auto;
+      font-size: 16px;
+      color: #e62b1e; 
+    }
+  }
+}
