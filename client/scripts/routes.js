@@ -26,6 +26,15 @@ function config($stateProvider, $urlRouterProvider) {
           controller: 'SpeakerDetailCtrl'
         }
       }
+    })
+    .state('tab.schedule', {
+      url: '/schedule',
+      views: {
+        'tab-schedule': {
+          templateUrl: 'client/templates/schedule.html',
+          controller: 'ScheduleCtrl'
+        }
+      }
     });
  
   $urlRouterProvider.otherwise('tab/speakers');
