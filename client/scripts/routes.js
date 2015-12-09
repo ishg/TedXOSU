@@ -44,7 +44,16 @@ function config($stateProvider, $urlRouterProvider) {
           controller: 'EventCtrl'
         }
       }
+    })
+    .state('tab.home',{
+      url: '/home',
+      views: {
+        'tab-home': {
+          templateUrl: 'client/templates/home.html',
+          controller: 'HomeCtrl'
+        }
+      }
     });
  
-  $urlRouterProvider.otherwise('tab/speakers');
+  $urlRouterProvider.otherwise('tab/home');
 }
