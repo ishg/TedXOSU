@@ -9,3 +9,23 @@
 a.timeline-header{
 	display:none;
 }
+
+.registration{
+  .row{
+    text-align: center;
+    i{
+      margin: 0 auto;
+      font-size: 28px;
+    }
+    p{
+      margin: 0 auto;
+      font-size: 32px;
+      color: #e62b1e; 
+      line-height: 28px;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+
+}
