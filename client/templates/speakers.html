@@ -1,7 +1,35 @@
 <ion-view view-title="Speakers">
-  <ion-content>
-    <div class="speaker-list">
+  <ion-content class="red-polygon">
+    
+    <div class="card" style="margin-bottom:0px">
+      <div class="item item-text-wrap" style="text-align:center">
+        <h1 style="color: #000000">2016 Speakers</h1>
+      </div>
+    </div>
+
+    <div id="special-list" class="speaker-list">
    		<div class="row" ng-repeat="rows in speakers">
+        <div 
+          class="col" 
+          ng-repeat="speaker in rows">
+          <a href="#/tab/speakers/{{speaker._id}}" ng-show="{{speaker.name}}">
+            <div class="card">
+              <img ng-src="{{speaker.picture}}">
+              <p>{{speaker.name}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap" style="text-align:center">
+        <h1 style="color: #000000">2016 Performers</h1>
+      </div>
+    </div>
+
+    <div class="speaker-list">
+      <div class="row" ng-repeat="rows in performers">
         <div 
           class="col" 
           ng-repeat="speaker in rows">
@@ -14,5 +42,6 @@
         </div>
       </div>
     </div>
+
   </ion-content>
 </ion-view>
