@@ -12,7 +12,7 @@
         <div 
           class="col" 
           ng-repeat="speaker in rows">
-          <a href="#/tab/speakers/{{speaker._id}}" ng-show="{{speaker.name}}">
+          <a href="#/tab/speakers/{{speaker._id}}" ng-if="speaker.name">
             <div class="card">
               <img ng-src="{{speaker.picture}}">
               <p>{{speaker.name}}</p>

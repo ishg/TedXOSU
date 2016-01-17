@@ -62,8 +62,11 @@
 }
 
 .about-page{
-  .card{
+  .banner{
     border-radius: 0px;
+  }
+  .list:last-child.card{
+    margin: 0px;
   }
   .item-divider{
     //background-color: #e62b1e;
@@ -72,6 +75,7 @@
   }
   .item-body{
     font-size: 13px;
+    padding-top: 16px;
   }
   .item-text-wrap{
     padding: 5px 16px 5px 16px;
