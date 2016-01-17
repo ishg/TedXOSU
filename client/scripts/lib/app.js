@@ -3,6 +3,7 @@ angular
     'angular-meteor',
     'ionic'
   ]);
+
  
 if (Meteor.isCordova) {
   angular.element(document).on('deviceready', onReady);
@@ -11,6 +12,8 @@ if (Meteor.isCordova) {
 else {
   angular.element(document).ready(onReady);
 }
+
+
 
 if(Meteor.isServer){  
   Meteor.startup(function () {

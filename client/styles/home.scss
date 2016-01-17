@@ -1,9 +1,14 @@
 .ion-social-twitter{
-	color: #52A5E5;
+	color: #55acee;
 }
-
-.item-body{
-	
+.ion-social-facebook{
+  color:#3b5998;
+}
+.ion-social-instagram-outline{
+  color:#3f729b
+}
+.ion-social-youtube{
+  color:  #cd201f
 }
 
 a.timeline-header{
@@ -38,4 +43,11 @@ a.timeline-header{
 
 .list:last-child.card{
   margin: 0px;
+}
+
+.social{
+  text-align:center;
+  i{
+    font-size: 28px;
+  }
 }
