@@ -6,6 +6,7 @@ angular
  
 if (Meteor.isCordova) {
   angular.element(document).on('deviceready', onReady);
+  screen.lockOrientation('portrait');
 }
 else {
   angular.element(document).ready(onReady);
