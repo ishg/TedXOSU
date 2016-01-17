@@ -1,6 +1,7 @@
-<ion-view view-title="Event">
-  <ion-content class="red-polygon">
+<ion-view view-title="About">
+  <ion-content class="red-polygon about-page">
   	
+    <!--
   	<div class="card">
   		<div class="row">
   			<div class="col sponsors">
@@ -75,5 +76,50 @@
   	  </div>
 
   	</div>
+    -->
+    <div class="list card banner">
+      <div class="item item-image">
+        <img src="logo-black.png">
+      </div>
+      <div class="item item-divider center-header">
+        About TEDx
+      </div>
+      <div class="item item-body">
+        In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+      </div>
+      <div class="item item-divider center-header">
+        About TEDxOSU App
+      </div>
+      <div class="item item-body">
+        The TEDxOhioStateUniversity App for 2016 was designed and developed by Ishmeet Grewal.
+      </div>
+      <div class="item item-divider center-header">
+        Our Team
+      </div>
+      <div class="item item-divider">
+        Executive Board
+      </div>
+      <div class="item exec" ng-repeat="e in execboard">
+        <h2>{{e.name}}</h2>
+        <p>{{e.title}}</p> 
+      </div>
+      <div ng-repeat="row in team">
+        <div class="item item-divider">
+          {{row.name}}
+        </div>
+        <div class="item item-text-wrap" ng-repeat="m in row.members">
+          {{m}}
+        </div>
+      </div>
+      <div class="item item-divider">
+        Advisors
+      </div>
+      <div class="item exec item-text-wrap" ng-repeat="e in advisors">
+        <h2>{{e.name}}</h2>
+        <p>{{e.title}}</p> 
+      </div>
+    </div>
+
+
   </ion-content>
 </ion-view>
