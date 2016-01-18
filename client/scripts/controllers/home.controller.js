@@ -22,7 +22,8 @@ function HomeCtrl($scope, $ionicModal){
   var schemes = [
     'fb://facewebmodal/f?href=https://www.facebook.com/TEDxOhioStateU',
     'twitter://user?screen_name=TEDxOhioStateU',
-    'instagram://user?username=tedxohiostateu'
+    'instagram://user?username=tedxohiostateu',
+    'comgooglemapsurl://www.google.com/maps/place/Mershon+Auditorium/@40.000683,-83.0093077,15z/data=!4m2!3m1!1s0x0:0x988ef425d5b7d27e'
   ];
 
   
@@ -33,7 +34,7 @@ function HomeCtrl($scope, $ionicModal){
         navigator.startApp.check(
           "fb://", 
           function(message) {
-            
+            window.open(schemes[i], '_system');
           }, 
           function(error) {
             window.open('http://www.facebook.com/TEDxOhioStateU', '_system');
@@ -43,7 +44,7 @@ function HomeCtrl($scope, $ionicModal){
         navigator.startApp.check(
           "twitter://", 
           function(message) {
-            
+            window.open(schemes[i], '_system');
           }, 
           function(error) {
             window.open('http://twitter.com/TEDxOhioStateU', '_system');
@@ -53,10 +54,20 @@ function HomeCtrl($scope, $ionicModal){
         navigator.startApp.check(
           "instagram://", 
           function(message) {
-
+            window.open(schemes[i], '_system');
           }, 
           function(error) {
             window.open('http://instagram.com/tedxohiostateu', '_system');
+          }
+        );
+      }else if(i==3){
+        navigator.startApp.check(
+          "comgooglemaps://", 
+          function(message) {
+            window.open(schemes[i], '_system');
+          }, 
+          function(error) {
+            window.open('https://www.google.com/maps/place/Mershon+Auditorium/@40.000683,-83.0093077,15z/data=!4m2!3m1!1s0x0:0x988ef425d5b7d27e', '_system');
           }
         );
       }
@@ -67,7 +78,6 @@ function HomeCtrl($scope, $ionicModal){
         navigator.startApp.check(
           "com.facebook.katana", 
           function(message) {
-            console.log("Opening Facebook");
             window.open(schemes[i], '_system');
           }, 
           function(error) {
@@ -94,11 +104,17 @@ function HomeCtrl($scope, $ionicModal){
             window.open('http://instagram.com/tedxohiostateu', '_system');
           }
         );
-      }  
+      }else if(i==3){
+        navigator.startApp.check(
+          "com.google.android.gms.maps", 
+          function(message) {
+            window.open(schemes[i], '_system');
+          }, 
+          function(error) {
+            window.open('https://www.google.com/maps/place/Mershon+Auditorium/@40.000683,-83.0093077,15z/data=!4m2!3m1!1s0x0:0x988ef425d5b7d27e', '_system');
+          }
+        );
+      }
     }
   }
-
-  
-  
-  
 }
