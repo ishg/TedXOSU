@@ -4,10 +4,10 @@ angular
 
 function SpeakersCtrl($scope){
 	$scope.speakers = $scope.$meteorCollection(Speakers, false);
-	$scope.speakers = chunks($scope.speakers, 2);
-  $("#special-list div.row:last-child").addClass("last-item");
+	//$scope.speakers = chunks($scope.speakers, 2);
+  //$("#special-list div.row:last-child").addClass("last-item");
   $scope.performers = $scope.$meteorCollection(Performers, false);
-  $scope.performers = chunkp($scope.performers, 2);
+  //$scope.performers = chunkp($scope.performers, 2);
 }
 
 function chunks(arr, size) {
