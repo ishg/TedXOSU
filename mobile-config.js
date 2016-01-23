@@ -1,5 +1,6 @@
 App.info({
-	name: 'TEDxOhioStateUniversity',
+	id: 'com.osu.tedx'
+  name: 'TEDxOhioStateUniversity',
 	description: 'Mobile app for TEDxOhioStateUniversity',
 	author: 'Ishmeet Grewal',
 	version: '0.0.1',

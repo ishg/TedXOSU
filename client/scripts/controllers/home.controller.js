@@ -2,7 +2,17 @@ angular
   .module('TedXOSU')
   .controller('HomeCtrl', HomeCtrl);
 
-function HomeCtrl($scope, $ionicModal){
+function HomeCtrl($scope, $ionicModal, $ionicLoading){
+
+  $ionicLoading.show({
+    template: '<ion-spinner></ion-spinner>'
+  })
+
+  $scope.$on('$ionicView.beforeEnter', function(e){
+    ionic.DomUtil.ready(function(){
+      $ionicLoading.hide();
+    })
+  });
 
   $scope.openModal = function(){
     $ionicModal.fromTemplateUrl('registration-modal.html',{
@@ -25,8 +35,6 @@ function HomeCtrl($scope, $ionicModal){
     'instagram://user?username=tedxohiostateu',
     'comgooglemapsurl://www.google.com/maps/place/Mershon+Auditorium/@40.000683,-83.0093077,15z/data=!4m2!3m1!1s0x0:0x988ef425d5b7d27e'
   ];
-
-  
   
   $scope.openLink = function(i){
     if(ionic.Platform.isIOS()){
