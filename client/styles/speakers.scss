@@ -9,25 +9,26 @@
 }
 
 .speaker-list{
-	text-align:center;
-	a{
-		color: #000000;
-		text-decoration: none;
-	}
-	a:visited{
-		color: #000000;
-	}
-	.col{
-		.card{
-			margin: 0px;
-			position:relative;
+	.speaker-list-item{
+		padding: 0;
+		.row{
+			padding: 0;
 		}
-		img{
-			width: 100%;
-			border: 2px solid white;
+		.col.avatar{
+			img{
+				width: 100%;
+				vertical-align: middle;
+			}
+			padding: 0;
+		}
+		.col-80{
+			padding: 14px 40px 14px 14px;
 		}
 		p{
-			margin-bottom: 5px;
+			white-space: normal;	
+		}
+		h2{
+			white-space: normal;
 		}
 	}
 }

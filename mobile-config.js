@@ -2,7 +2,7 @@ App.info({
 	name: 'TEDxOhioStateUniversity',
 	description: 'Mobile app for TEDxOhioStateUniversity',
 	author: 'Ishmeet Grewal',
-	version: '0.0.1'
+	version: '0.0.1',
   website: 'http://tedx.osu.edu'
 });
 
@@ -20,9 +20,7 @@ App.icons({
   'android_ldpi': 'resources/android/icon/drawable-ldpi-icon.png',
   'android_mdpi': 'resources/android/icon/drawable-mdpi-icon.png',
   'android_hdpi': 'resources/android/icon/drawable-hdpi-icon.png',
-  'android_xhdpi': 'resources/android/icon/drawable-xhdpi-icon.png',
-  'android_xxhdpi': 'resources/android/icon/drawable-xxhdpi-icon.png',
-  'android_xxxhdpi': 'resources/android/icon/drawable-xxxhdpi-icon.png'
+  'android_xhdpi': 'resources/android/icon/drawable-xxxhdpi-icon.png'
 });
 
 App.launchScreens({
@@ -40,22 +38,16 @@ App.launchScreens({
   'ipad_landscape_2x': 'resources/ios/splash/Default-Landscape@2x~ipad.png',
 
   // Android
-  'android_ldpi_portrait': 'resources/android/splash/drawable-land-ldpi-screen.png',
+  'android_ldpi_portrait': 'resources/android/splash/drawable-land-hdpi-screen.png',
   'android_ldpi_landscape': 'resources/android/splash/drawable-port-ldpi-screen.png',
-  'android_mdpi_portrait': 'resources/android/splash/drawable-land-mdpi-screen.png',
+  'android_mdpi_portrait': 'resources/android/splash/drawable-land-hdpi-screen.png',
   'android_mdpi_landscape': 'resources/android/splash/drawable-port-mdpi-screen.png',
   'android_hdpi_portrait': 'resources/android/splash/drawable-land-hdpi-screen.png',
   'android_hdpi_landscape': 'resources/android/splash/drawable-port-hdpi-screen.png',
   'android_xhdpi_portrait': 'resources/android/splash/drawable-land-xhdpi-screen.png',
-  'android_xhdpi_landscape': 'resources/android/splash/drawable-port-xhdpi-screen.png',
-  'android_xxhdpi_portrait': 'resources/android/splash/drawable-land-xxhdpi-screen.png',
-  'android_xxhdpi_landscape': 'resources/android/splash/drawable-port-xxhdpi-screen.png',
-  'android_xxxhdpi_portrait': 'resources/android/splash/drawable-land-xxxhdpi-screen.png',
-  'android_xxxhdpi_landscape': 'resources/android/splash/drawable-port-xxxhdpi-screen.png'
+  'android_xhdpi_landscape': 'resources/android/splash/drawable-port-xhdpi-screen.png'
 });
 
 // Set PhoneGap/Cordova preferences
-App.setPreference('BackgroundColor', '0xff0000ff');
+App.setPreference('BackgroundColor', '0xffffffff');
 App.setPreference('HideKeyboardFormAccessoryBar', true);
-App.setPreference('Orientation', 'default');
-App.setPreference('Orientation', 'all', 'ios');
