@@ -1,78 +1,22 @@
 <ion-view view-title="Speakers">
-  <ion-content class="red-polygon">
+  <ion-content overflow-scroll="true">
     
-    <div class="list card speaker-list">
-      <a ng-repeat="speaker in speakers" class="item item-icon-right speaker-list-item" href="#/tab/speakers/{{speaker._id}}">
-      <div class="row">
-        <div class="col avatar">
-          <img ng-src="{{speaker.picture}}">
-        </div>
-        <div class="col col-80">
-          <h2>{{speaker.name}}</h2>
-          <p>{{speaker.title}}</p>
-          <i style="color: #e62b1e;" class="icon ion-chevron-right"></i>
-        </div>
-      </div>
-      </a>
+    <div class="list speaker-list">
 
-      <a ng-repeat="speaker in performers" class="item item-icon-right speaker-list-item" href="#/tab/speakers/{{speaker._id}}">
-      <div class="row">
-        <div class="col avatar">
-          <img ng-src="{{speaker.picture}}">
-        </div>
-        <div class="col col-80">
-          <h2>{{speaker.name}}</h2>
-          <p>{{speaker.title}}</p>
-          <i style="color: #e62b1e;" class="icon ion-chevron-right"></i>
-        </div>
-      </div>
+      <a ng-repeat="speaker in speakers" class="item item-thumbnail-left item-icon-right" href="#/tab/speakers/{{speaker._id}}">
+        <img ng-src="{{speaker.picture}}">
+        <h2>{{speaker.name}}</h2>
+        <p>{{speaker.title}}</p>
+        <i style="color: #e62b1e;" class="icon ion-chevron-right"></i>
+      </a>
+      <a ng-repeat="speaker in performers" class="item item-thumbnail-left item-icon-right" href="#/tab/speakers/{{speaker._id}}">
+        <img ng-src="{{speaker.picture}}">
+        <h2>{{speaker.name}}</h2>
+        <p>{{speaker.title}}</p>
+        <i style="color: #e62b1e;" class="icon ion-chevron-right"></i>
       </a>
 
     </div>
-
-    <!--
-      <div class="card" style="margin-bottom:0px">
-        <div class="item item-text-wrap" style="text-align:center">
-          <h1 style="color: #000000">2016 Speakers</h1>
-        </div>
-      </div>
-
-      <div id="special-list" class="speaker-list">
-     		<div class="row" ng-repeat="rows in speakers">
-          <div 
-            class="col" 
-            ng-repeat="speaker in rows">
-            <a href="#/tab/speakers/{{speaker._id}}" ng-if="speaker.name">
-              <div class="card">
-                <img ng-src="{{speaker.picture}}">
-                <p>{{speaker.name}}</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="item item-text-wrap" style="text-align:center">
-          <h1 style="color: #000000">2016 Performers</h1>
-        </div>
-      </div>
-
-      <div class="speaker-list">
-        <div class="row" ng-repeat="rows in performers">
-          <div 
-            class="col" 
-            ng-repeat="speaker in rows">
-            <a href="#/tab/speakers/{{speaker._id}}">
-              <div class="card">
-                <img ng-src="{{speaker.picture}}">
-                <p>{{speaker.name}}</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    -->
 
   </ion-content>
 </ion-view>
