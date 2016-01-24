@@ -1,9 +1,9 @@
 App.info({
-	id: 'com.osu.tedx'
+	id: 'com.idc6jyc9yn36dqvzzoup',
   name: 'TEDxOhioStateUniversity',
 	description: 'Mobile app for TEDxOhioStateUniversity',
 	author: 'Ishmeet Grewal',
-	version: '0.0.1',
+	version: '0.0.3',
   website: 'http://tedx.osu.edu'
 });
 
@@ -52,3 +52,5 @@ App.launchScreens({
 // Set PhoneGap/Cordova preferences
 App.setPreference('BackgroundColor', '0xffffffff');
 App.setPreference('HideKeyboardFormAccessoryBar', true);
+App.setPreference('Orientation', 'default');
+App.setPreference('Orientation', 'all', 'ios');

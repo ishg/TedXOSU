@@ -2,3 +2,4 @@ cordova-plugin-device@1.1.0
 cordova-plugin-inappbrowser@1.1.1
 cordova-plugin-screen-orientation@1.4.0
 cordova-plugin-startapp@0.0.6
+cordova-plugin-whitelist@1.2.1
